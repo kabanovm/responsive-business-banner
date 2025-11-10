@@ -1,0 +1,12 @@
+.link {
+    color: var(--color-text-secondary);
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: var(--color-primary);
+}
+
+.link:focus {
+    outline: 2px solid var(--color-primary);
+}
