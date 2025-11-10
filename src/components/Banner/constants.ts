@@ -1,5 +1,7 @@
+import checkIcon from '../../assets/check.svg';
+
 export const BENEFITS_LIST = [
-  { icon: 'v', text: 'Fast approval process' },
-  { icon: 'v', text: 'Flexible repayment terms' },
-  { icon: 'v', text: 'Competitive interest rates' },
+  { icon: checkIcon, text: 'Fast approval process' },
+  { icon: checkIcon, text: 'Flexible repayment terms' },
+  { icon: checkIcon, text: 'Competitive interest rates' },
 ];

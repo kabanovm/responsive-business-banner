@@ -2,9 +2,10 @@ import styles from './Banner.module.css';
 import Button from '../Button/Button.tsx';
 import Link from '../Link/Link.tsx';
 import List from '../List/List.tsx';
+import closeIcon from '../../assets/close.svg';
 import { BENEFITS_LIST } from './constants.ts';
-
-type BannerProps = { onClose: () => void };
+import type { BannerProps } from './types.ts';
+import Picture from '../Picture/Picture.tsx';
 
 const Banner = ({ onClose }: BannerProps) => {
   return (
@@ -15,7 +16,7 @@ const Banner = ({ onClose }: BannerProps) => {
         onClick={onClose}
         onKeyDown={(e) => e.key === 'Enter' && onClose()}
       >
-        x
+        <img src={closeIcon} alt="close" width={12} height={12} />
       </button>
       <h1 className={styles.banner__title}>Get the Business Funding You Need</h1>
       <div className={styles.banner__content}>
@@ -26,7 +27,7 @@ const Banner = ({ onClose }: BannerProps) => {
         </p>
         <List items={BENEFITS_LIST} />
       </div>
-      <picture className={styles.coins}>{/* image coins*/}</picture>
+      <Picture />
       <div className={styles.actions}>
         <Button onClick={() => {}}>Apply Now</Button>
         <Link text="MORE INFORMATION" href="https://finom.co" />

@@ -1,16 +1,13 @@
 .app {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-lg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
 }
 
 .app__container {
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: var(--spacing-2xl);
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
 }
-
-
-
