@@ -1,3 +1,5 @@
+@import '@fontsource/poppins/index.css';
+
 :root {
   --color-primary: #ff4c5c;
   --color-background: #ffffff;
@@ -7,6 +9,7 @@
   --color-text-secondary: rgba(11, 0, 46, 0.64);
   --color-grey: rgba(11, 0, 46, 0.5);
   --color-border: #6666ff;
+  --color-background-app: #f3f2f7;
 
   /* Spacing */
   --spacing-xs: 8px;
@@ -30,7 +33,7 @@
 
   /* Fonts */
   --font-family: 'Poppins', -apple-system, 'Segoe UI', 'Roboto', sans-serif;
-  --font-size-xs: 14px;
+  --font-size-xs: 12px;
   --font-size-sm: 16px;
   --font-size-md: 18px;
   --font-size-lg: 20px;
@@ -51,6 +54,13 @@
   --z-modal: 1000;
 }
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background-app);
+  font-family: var(--font-family);
 }

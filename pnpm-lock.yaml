@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/poppins':
+        specifier: ^5.2.7
+        version: 5.2.7
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -16,49 +19,49 @@ importers:
         version: 19.2.0(react@19.2.0)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.39.1
+        specifier: 9.39.1
         version: 9.39.1
       '@types/node':
-        specifier: ^24.10.0
+        specifier: 24.10.0
         version: 24.10.0
       '@types/react':
-        specifier: ^19.2.2
+        specifier: 19.2.2
         version: 19.2.2
       '@types/react-dom':
-        specifier: ^19.2.2
+        specifier: 19.2.2
         version: 19.2.2(@types/react@19.2.2)
       '@vitejs/plugin-react':
-        specifier: ^5.1.0
+        specifier: 5.1.0
         version: 5.1.0(vite@7.2.2(@types/node@24.10.0))
       eslint:
-        specifier: ^9.39.1
+        specifier: 9.39.1
         version: 9.39.1
       eslint-config-prettier:
-        specifier: ^10.1.8
+        specifier: 10.1.8
         version: 10.1.8(eslint@9.39.1)
       eslint-plugin-jsx-a11y:
-        specifier: ^6.10.2
+        specifier: 6.10.2
         version: 6.10.2(eslint@9.39.1)
       eslint-plugin-react-hooks:
-        specifier: ^5.2.0
+        specifier: 5.2.0
         version: 5.2.0(eslint@9.39.1)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.24
+        specifier: 0.4.24
         version: 0.4.24(eslint@9.39.1)
       globals:
-        specifier: ^16.5.0
+        specifier: 16.5.0
         version: 16.5.0
       prettier:
-        specifier: ^3.6.2
+        specifier: 3.6.2
         version: 3.6.2
       typescript:
-        specifier: ~5.9.3
+        specifier: 5.9.3
         version: 5.9.3
       typescript-eslint:
-        specifier: ^8.46.3
+        specifier: 8.46.4
         version: 8.46.4(eslint@9.39.1)(typescript@5.9.3)
       vite:
-        specifier: ^7.2.2
+        specifier: 7.2.2
         version: 7.2.2(@types/node@24.10.0)
 
 packages:
@@ -339,6 +342,9 @@ packages:
   '@eslint/plugin-kit@0.4.1':
     resolution: {integrity: sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fontsource/poppins@5.2.7':
+    resolution: {integrity: sha512-6uQyPmseo4FgI97WIhA4yWRlNaoLk4vSDK/PyRwdqqZb5zAEuc+Kunt8JTMcsHYUEGYBtN15SNkMajMdqUSUmg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1799,6 +1805,8 @@ snapshots:
     dependencies:
       '@eslint/core': 0.17.0
       levn: 0.4.1
+
+  '@fontsource/poppins@5.2.7': {}
 
   '@humanfs/core@0.19.1': {}
 

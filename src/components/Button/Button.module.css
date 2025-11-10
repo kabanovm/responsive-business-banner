@@ -9,6 +9,7 @@
   transition: all var(--transition-normal);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
+  max-height: 40px;
 }
 
 .button:hover {

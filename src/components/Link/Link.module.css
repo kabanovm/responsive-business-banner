@@ -1,6 +1,10 @@
 .link {
   color: var(--color-text-secondary);
-  text-decoration: underline;
+  text-decoration: none;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .link:hover {
@@ -8,5 +12,5 @@
 }
 
 .link:focus {
-  outline: 2px solid var(--color-primary);
+  outline: 1px solid var(--color-primary);
 }

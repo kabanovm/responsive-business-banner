@@ -27,11 +27,17 @@ const Banner = ({ onClose }: BannerProps) => {
         </p>
         <List items={BENEFITS_LIST} />
       </div>
-      <Picture />
-      <div className={styles.actions}>
-        <Button onClick={() => {}}>Apply Now</Button>
-        <Link text="MORE INFORMATION" href="https://finom.co" />
+      <div className={styles.banner__actions}>
+        <Button
+          onClick={() => {
+            console.log('apply');
+          }}
+        >
+          Apply Now
+        </Button>
+        <Link text="more information" href="https://finom.co" />
       </div>
+      <Picture />
     </div>
   );
 };
