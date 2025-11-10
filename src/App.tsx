@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Banner from './components/Banner/Banner.tsx';
 import Button from './components/Button/Button.tsx';
 import styles from './App.module.css';
-import './App.css';
 
 function App() {
   const [isBannerVisible, setIsBannerVisible] = useState(false);

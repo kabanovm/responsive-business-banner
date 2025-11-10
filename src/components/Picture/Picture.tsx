@@ -11,7 +11,7 @@ const Picture = () => {
     <picture className={styles.picture}>
       <source type="image/avif" srcSet={`${coins1xAvif} 1x, ${coins2xAvif} 2x`} />
       <source type="image/webp" srcSet={`${coins1xWebp} 1x, ${coins2xWebp} 2x`} />
-      <img srcSet={`${coins1x} 1x, ${coins2x} 2x`} alt="coins image" />
+      <img src={coins1x} srcSet={`${coins1x} 1x, ${coins2x} 2x`} alt="coins image" loading="lazy" />
     </picture>
   );
 };
