@@ -133,3 +133,11 @@
     padding-right: 28px;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .banner,
+  .banner__overlay {
+    animation: none !important;
+    transition: none !important;
+  }
+}

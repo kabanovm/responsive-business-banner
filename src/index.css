@@ -59,4 +59,5 @@
 body {
   background-color: var(--color-background-app);
   font-family: var(--font-family);
+  overflow: hidden;
 }
