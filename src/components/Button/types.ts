@@ -1,10 +1,14 @@
 import type { ReactNode } from 'react';
 
+export type ButtonVariant = 'primary' | 'secondary' | 'close';
+export type ButtonType = 'button' | 'submit' | 'reset';
+
 export type ButtonProps = {
   children: ReactNode;
   onClick?: () => void;
-  type?: 'button' | 'submit' | 'reset';
+  type?: ButtonType;
   disabled?: boolean;
   ariaLabel?: string;
-  variant?: 'primary' | 'secondary' | 'close';
+  variant?: ButtonVariant;
+  className?: string;
 };

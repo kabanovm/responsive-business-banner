@@ -1,13 +1,13 @@
 import styles from './Banner.module.css';
-import Button from '../Button/Button.tsx';
-import Link from '../Link/Link.tsx';
-import List from '../List/List.tsx';
-import CloseIcon from '../../assets/icons/close.svg?react';
+import Button from '@components/Button/Button.tsx';
+import Link from '@components/Link/Link.tsx';
+import List from '@components/List/List.tsx';
+import CloseIcon from '@assets/icons/close.svg?react';
 import { BENEFITS_LIST } from './constants.tsx';
 import type { BannerProps } from './types.ts';
-import Picture from '../Picture/Picture.tsx';
-import { useEscapeClose } from './useEscapeClose.tsx';
-import { useFocusLoop } from './useFocusLoop.tsx';
+import Picture from '@components/Picture/Picture.tsx';
+import { useEscapeClose } from '@hooks/useEscapeClose.ts';
+import { useFocusLoop } from '@hooks/useFocusLoop.ts';
 
 const Banner = ({ onClose }: BannerProps) => {
   const bannerRef = useFocusLoop<HTMLDivElement>();

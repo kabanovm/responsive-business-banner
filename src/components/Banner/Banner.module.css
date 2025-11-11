@@ -28,7 +28,6 @@
   height: auto;
   min-height: 376px;
   max-height: 80vh;
-  /*margin: var(--spacing-lg) auto;*/
   position: fixed;
   top: 50%;
   left: 50%;
@@ -95,22 +94,20 @@
     padding: var(--spacing-ml);
   }
 
-  .banner__close {
-    width: 28px;
-    height: 28px;
-  }
   .banner__content {
     flex-direction: column;
     gap: var(--spacing-ml);
   }
+
   .banner__actions {
     flex-direction: column;
     gap: var(--spacing-ml);
-
-    & > * {
-      width: 100%;
-    }
   }
+
+  .banner__actions > * {
+    width: 100%;
+  }
+
   .banner__title {
     font-size: var(--font-size-lg);
     padding-right: 28px;

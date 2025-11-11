@@ -4,8 +4,8 @@ import type { ListProps } from './types.ts';
 const List = ({ items }: ListProps) => {
   return (
     <ul className={styles.list}>
-      {items.map(({ text, icon }) => (
-        <li key={text} className={styles.list__item}>
+      {items.map(({ text, icon, id }) => (
+        <li key={id} className={styles.list__item}>
           {icon}
           <span className={styles.list__text}>{text}</span>
         </li>

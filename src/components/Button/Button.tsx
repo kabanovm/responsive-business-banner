@@ -1,6 +1,7 @@
+import clsx from 'clsx';
+
 import styles from './Button.module.css';
 import type { ButtonProps } from './types.ts';
-import clsx from 'clsx';
 
 const Button = ({
   onClick,
@@ -9,6 +10,7 @@ const Button = ({
   type = 'button',
   variant = 'primary',
   disabled = false,
+  className,
 }: ButtonProps) => {
   return (
     <button
@@ -16,7 +18,7 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
       aria-label={ariaLabel}
-      className={clsx(styles.button, styles[`button--${variant}`])}
+      className={clsx(styles.button, styles[`button--${variant}`], className)}
     >
       {children}
     </button>

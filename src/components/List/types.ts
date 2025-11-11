@@ -1,6 +1,10 @@
 import type { ReactNode } from 'react';
 
-type ListItem = { icon: ReactNode; text: string };
+export type ListItem = {
+  icon: ReactNode;
+  text: string;
+  id: string;
+};
 
 export type ListProps = {
   items: ListItem[];
