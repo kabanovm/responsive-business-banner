@@ -1,6 +1,10 @@
 import type { ReactNode } from 'react';
 
 export type ButtonProps = {
-  onClick: () => void;
   children: ReactNode;
+  onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
+  ariaLabel?: string;
+  variant?: 'primary' | 'secondary' | 'close';
 };

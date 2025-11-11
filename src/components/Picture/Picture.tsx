@@ -1,9 +1,9 @@
-import coins1x from '../../assets/coins_x1.png';
-import coins2x from '../../assets/coins_x2.png';
-import coins1xWebp from '../../assets/coins_x1.webp';
-import coins2xWebp from '../../assets/coins_x2.webp';
-import coins1xAvif from '../../assets/coins_x1.avif';
-import coins2xAvif from '../../assets/coins_x2.avif';
+import coins1x from '../../assets/images/coins_x1.png';
+import coins2x from '../../assets/images/coins_x2.png';
+import coins1xWebp from '../../assets/images/coins_x1.webp';
+import coins2xWebp from '../../assets/images/coins_x2.webp';
+import coins1xAvif from '../../assets/images/coins_x1.avif';
+import coins2xAvif from '../../assets/images/coins_x2.avif';
 import styles from './Picture.module.css';
 
 const Picture = () => {

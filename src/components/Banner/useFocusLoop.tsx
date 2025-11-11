@@ -3,6 +3,14 @@ import { useEffect, useRef } from 'react';
 const FOCUSABLE_SELECTOR =
   'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
+export const getFocusableElements = (container: HTMLElement): HTMLElement[] => {
+  return Array.from(
+    container.querySelectorAll<HTMLElement>(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    )
+  );
+};
+
 export const useFocusLoop = <T extends HTMLElement>(isActive: boolean = true) => {
   const containerRef = useRef<T | null>(null);
   const previousActive = useRef<HTMLElement | null>(null);
@@ -19,6 +27,7 @@ export const useFocusLoop = <T extends HTMLElement>(isActive: boolean = true) =>
       const focusable = Array.from(
         containerRef.current.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)
       );
+
       if (!focusable.length) return;
 
       const first = focusable[0];

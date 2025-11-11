@@ -3,14 +3,14 @@ import type { ListProps } from './types.ts';
 
 const List = ({ items }: ListProps) => {
   return (
-    <div className={styles.list}>
+    <ul className={styles.list}>
       {items.map(({ text, icon }) => (
-        <div key={text} className={styles.list__item}>
-          <img src={icon} alt="list-item-icon" width={24} height={24} />
+        <li key={text} className={styles.list__item}>
+          {icon}
           <span className={styles.list__text}>{text}</span>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
