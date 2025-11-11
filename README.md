@@ -11,6 +11,7 @@ https://responsive-business-banner.vercel.app/
 - React 19
 - TypeScript
 - Vite
+- Vitest
 - CSS Modules + BEM
 - ESLint + Prettier
 - clsx
@@ -20,6 +21,11 @@ https://responsive-business-banner.vercel.app/
 
 ```bash
 pnpm install
-
 pnpm run dev
+```
+
+### Testing
+```bash
+pnpm run test      
+pnpm run test:ui # vitest UI in browser
 ```

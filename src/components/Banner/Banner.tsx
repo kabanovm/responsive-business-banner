@@ -25,7 +25,7 @@ const Banner = ({ onClose }: BannerProps) => {
         aria-labelledby="banner-title"
         tabIndex={-1}
       >
-        <Button variant="close" aria-label="Close banner" onClick={onClose}>
+        <Button variant="close" ariaLabel="close banner" onClick={onClose}>
           <CloseIcon width={12} height={12} aria-hidden="true" />
         </Button>
         <h1 id="banner-title" className={styles.banner__title}>

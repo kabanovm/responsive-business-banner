@@ -3,7 +3,8 @@
     "target": "ES2023",
     "lib": ["ES2023"],
     "module": "ESNext",
-    "types": ["node"],
+    "esModuleInterop": true,
+    "types": ["node", "vite"],
     "skipLibCheck": true,
 
     /* Bundler mode */
