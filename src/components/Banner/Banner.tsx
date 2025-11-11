@@ -1,25 +1,26 @@
-import styles from './Banner.module.css';
 import Button from '@components/Button/Button.tsx';
 import Link from '@components/Link/Link.tsx';
-import List from '@components/List/List.tsx';
-import CloseIcon from '@assets/icons/close.svg?react';
-import { BENEFITS_LIST } from './constants.tsx';
-import type { BannerProps } from './types.ts';
+import BenefitsList from '@components/BenefitsList/BenefitsList.tsx';
 import Picture from '@components/Picture/Picture.tsx';
 import { useEscapeClose } from '@hooks/useEscapeClose.ts';
 import { useFocusLoop } from '@hooks/useFocusLoop.ts';
+import CloseIcon from '@assets/icons/close.svg?react';
+
+import { BENEFITS_LIST } from './constants.tsx';
+import type { BannerProps } from './types.ts';
+import styles from './Banner.module.css';
 
 const Banner = ({ onClose }: BannerProps) => {
   const bannerRef = useFocusLoop<HTMLDivElement>();
   useEscapeClose(onClose);
 
   return (
-    <div role="region" aria-labelledby="banner-title">
+    <>
       <div className={styles.banner__overlay} onClick={onClose} aria-hidden="true" />
       <div
         ref={bannerRef}
         className={styles.banner}
-        role="dialog"
+        role="region"
         aria-modal="true"
         aria-labelledby="banner-title"
         tabIndex={-1}
@@ -36,7 +37,7 @@ const Banner = ({ onClose }: BannerProps) => {
             Whether you're investing in new equipment, increasing inventory, or boosting cash flow,
             we offer quick approvals and competitive rates to keep your business growing.
           </p>
-          <List items={BENEFITS_LIST} />
+          <BenefitsList items={BENEFITS_LIST} />
         </div>
         <div className={styles.banner__actions}>
           <Button onClick={onClose}>Apply Now</Button>
@@ -44,7 +45,7 @@ const Banner = ({ onClose }: BannerProps) => {
         </div>
         <Picture />
       </div>
-    </div>
+    </>
   );
 };
 

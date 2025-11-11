@@ -4,10 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "author": "Mikhail Kabanov",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kabanovm/responsive-business-banner"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

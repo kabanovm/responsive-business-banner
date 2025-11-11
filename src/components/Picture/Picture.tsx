@@ -15,7 +15,7 @@ const Picture = () => {
       <img
         src={coins1x}
         srcSet={`${coins1x} 1x, ${coins2x} 2x`}
-        alt="coins image"
+        alt=""
         loading="lazy"
         width={300}
         height={200}

@@ -8,6 +8,12 @@
 .list__item {
   display: flex;
   align-items: center;
+  line-height: 1.5;
+}
+
+.list__icon {
+  min-height: 24px;
+  min-width: 24px;
 }
 
 .list__text {
