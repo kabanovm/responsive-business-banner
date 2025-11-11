@@ -20,28 +20,31 @@ const Banner = ({ onClose }: BannerProps) => {
       <div
         ref={bannerRef}
         className={styles.banner}
-        role="region"
+        role="dialog"
         aria-modal="true"
         aria-labelledby="banner-title"
+        aria-describedby="banner-description"
         tabIndex={-1}
       >
-        <Button variant="close" ariaLabel="close banner" onClick={onClose}>
-          <CloseIcon width={12} height={12} aria-hidden="true" />
-        </Button>
-        <h1 id="banner-title" className={styles.banner__title}>
-          Get the Business Funding You Need
-        </h1>
-        <div className={styles.banner__content}>
-          <p className={styles.banner__description}>
-            Expand your business with a flexible loan tailored to your needs. <br />
-            Whether you're investing in new equipment, increasing inventory, or boosting cash flow,
-            we offer quick approvals and competitive rates to keep your business growing.
-          </p>
-          <BenefitsList items={BENEFITS_LIST} />
-        </div>
-        <div className={styles.banner__actions}>
-          <Button onClick={onClose}>Apply Now</Button>
-          <Link text="more information" href="https://finom.co" />
+        <div className={styles.banner__scrollable}>
+          <Button variant="close" ariaLabel="close banner" onClick={onClose}>
+            <CloseIcon width={12} height={12} aria-hidden="true" />
+          </Button>
+          <h1 id="banner-title" className={styles.banner__title}>
+            Get the Business Funding You Need
+          </h1>
+          <div className={styles.banner__content}>
+            <p id="banner-description" className={styles.banner__description}>
+              Expand your business with a flexible loan tailored to your needs. <br />
+              Whether you're investing in new equipment, increasing inventory, or boosting cash
+              flow, we offer quick approvals and competitive rates to keep your business growing.
+            </p>
+            <BenefitsList items={BENEFITS_LIST} />
+          </div>
+          <div className={styles.banner__actions}>
+            <Button onClick={onClose}>Apply Now</Button>
+            <Link text="more information" href="https://finom.co" />
+          </div>
         </div>
         <Picture />
       </div>

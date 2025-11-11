@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
-export default defineConfig(({}) => {
+export default defineConfig(() => {
   return {
     plugins: [react(), svgr()],
     resolve: {
@@ -13,6 +13,9 @@ export default defineConfig(({}) => {
         '@components': path.resolve(__dirname, './src/components'),
         '@hooks': path.resolve(__dirname, './src/hooks'),
       },
+    },
+    build: {
+      sourcemap: false,
     },
     test: {
       globals: true,

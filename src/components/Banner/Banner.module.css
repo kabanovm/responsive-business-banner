@@ -34,9 +34,8 @@
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-lg);
-  z-index: var(--z-modal);overflow-y: auto;
-    overflow-x: hidden;
-
+  z-index: var(--z-modal);
+  overflow: hidden;
   outline: none;
 
   transform: translate(-50%, -50%) scale(0.9) translateY(20px);
@@ -70,7 +69,17 @@
   justify-content: space-between;
   gap: var(--spacing-lg);
   overflow-wrap: break-word;
-    flex:1;
+  flex: 1;
+}
+
+.banner__scrollable {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: var(--spacing-xs);
+  margin-right: calc(var(--spacing-xs) * -4);
 }
 
 .banner__description {
@@ -96,8 +105,13 @@
     width: 95%;
     top: 50%;
     padding: var(--spacing-ml);
-      overflow-y: auto;
-      overflow-x: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .banner__scrollable {
+    padding-right: var(--spacing-xs);
+    margin-right: calc(var(--spacing-xs) * -1);
   }
 
   .banner__content {
